@@ -33,7 +33,7 @@ public interface PrintableNode{
   String getText();
 }
 ```
-2. Call the static `print` method in `TreePrinter`.
+2. Call the static `print` method in [TreePrinter](https://github.com/Mozi-Song/Tree-Printer/blob/master/TreePrinter/src/mightypork/TreePrinter.java).
 ```
 MyTree<String> tree = new MyTree<>();
 constructTree(tree);
