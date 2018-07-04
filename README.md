@@ -23,7 +23,7 @@ Also, it could be a tree of strings:
                                              ┌────┴────┐              └────┐    
                                            host4     host6               host9  
 ```
-## How To Use the Tree-Printer
+## How To Use 
 Usage only requires two simple steps.
 1. Have your tree node implement the `PrintableNode` interface.
 ```
@@ -44,4 +44,5 @@ This `TreePrinter` is actually ported from this [stackoverflow answer](https://s
 
 While trying to learn different tree structures (BST, AVL Tree, etc.) by implementing them, I find it difficult to see the correctness of the resulting tree just by seeing it in the Eclipse debug window. I wrote a `toString()` method for my AVL tree, it took me almost two days, the code was not elegant, and the result was not beautifully aligned. After searching for a while, I found MightyPork's answer on stackoverflow which best fit my requirements (in an aesthetic way).
 
+This visualizer could be used in similar ways: to see the correctness of your self-implemented tree, to view the structure of the tree, etc.
 
