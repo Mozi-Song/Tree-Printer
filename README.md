@@ -23,6 +23,18 @@ Also, it could be a tree of strings:
                                              ┌────┴────┐              └────┐    
                                            host4     host6               host9  
 ```
+The printer works best with an *almost-full (or balanced)* tree, since it draws the tree line-by-line, taking the width of a full last-level as the line width. Printing a biased tree will work too although you would have to have a very wide sheet for display.
+```
+                                                1                                               
+                                                └───────────────────────┐                       
+                                                                        2                       
+                                                                        └───────────┐           
+                                                                                    3           
+                                                                                    └─────┐     
+                                                                                          4     
+                                                                                          └──┐  
+                                                                                             5 
+```
 ## How To Use 
 Usage only requires two simple steps.
 1. Have your tree node implement the `PrintableNode` interface.
@@ -39,6 +51,7 @@ MyTree<String> tree = new MyTree<>();
 constructTree(tree);
 TreePrinter.print(tree.root);
 ```
+If you're seeing something like ??????????, make sure that your code that calls the printer is saved in UTF-8.
 ## Motivation & Credit
 This `TreePrinter` is actually ported from this [stackoverflow answer](https://stackoverflow.com/a/29704252/3585176) by [MightyPork](https://github.com/MightyPork?utf8=%E2%9C%93&tab=repositories&q=&type=&language=).
 
